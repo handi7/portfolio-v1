@@ -18,7 +18,7 @@ export default function Form() {
         process.env.SERVICE_ID,
         process.env.TEMPLATE_ID,
         ref.current,
-        process.env.PUB_KEY
+        "sUVbAoxAB4CdJSxtm"
       )
       .then(
         (result) => {
