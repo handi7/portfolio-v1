@@ -19,10 +19,10 @@ export default function Form() {
 
     emailjs
       .sendForm(
-        "service_ocbd47w",
-        "template_91blq1h",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         ref.current,
-        "sUVbAoxAB4CdJSxtm"
+        process.env.PUB_KEY
       )
       .then(
         (result) => {
