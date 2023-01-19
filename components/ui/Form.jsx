@@ -1,38 +1,52 @@
 import React, { useRef, useState } from "react";
 import classes from "@/styles/form.module.css";
 import emailjs from "@emailjs/browser";
-import { Alert, Spinner } from "reactstrap";
+import { Spinner } from "reactstrap";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function Form() {
   const ref = useRef();
 
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [form, setForm] = useState({});
 
   const submitHandler = (e) => {
     e.preventDefault();
     setLoading(true);
-    setError(false);
-    setSuccess(false);
-
     emailjs
       .sendForm(
-        "service_ocbd47w",
-        "template_91blq1h",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         ref.current,
-        "sUVbAoxAB4CdJSxtm"
+        process.env.PUB_KEY
       )
       .then(
         (result) => {
           setLoading(false);
-          setSuccess(true);
           setForm({});
+          toast.success("Pesan terkirim.", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         },
         (error) => {
           setLoading(false);
-          setError(true);
+          toast.error("Error", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         }
       );
   };
@@ -44,8 +58,6 @@ export default function Form() {
 
   return (
     <form className={`${classes.form}`} ref={ref} onSubmit={submitHandler}>
-      {success && <Alert>Terimakasih, pesan anda sudah terkirim.</Alert>}
-      {error && <Alert color="danger">Error.</Alert>}
       <div className={`${classes.form__group}`}>
         <input
           type="text"
@@ -87,6 +99,22 @@ export default function Form() {
           "Send"
         )}
       </button>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={1500}
+        hideProgressBar
+        newestOnTop={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        closeButton={false}
+        icon={false}
+        bodyClassName="bg-transparent"
+        className={classes.toast}
+      />
     </form>
   );
 }

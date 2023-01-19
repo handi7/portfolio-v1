@@ -35,33 +35,6 @@
   align-items: start;
 }
 
-/* .intro__skills {
-  text-align: left;
-  width: 130px;
-  padding: 10px 20px;
-  position: absolute;
-  top: 50%;
-  left: 22%;
-  transform: translateY(-50%);
-  border-radius: 5px;
-  background: #808dad26;
-  z-index: 10;
-}
-
-.intro__skills h6 {
-  background: transparent;
-  color: #fff;
-}
-
-.intro__skills span i {
-  color: #01d293;
-  background: transparent;
-}
-
-.intro__skills span {
-  background: transparent;
-} */
-
 .intro__experience {
   width: 150px;
   position: absolute;

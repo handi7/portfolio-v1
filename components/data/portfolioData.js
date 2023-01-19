@@ -6,7 +6,7 @@ export const portfolioData = [
     project: "Personal Portfolio",
     keyword: ["Next Js"],
     liveUrl: "/",
-    github: "",
+    github: "https://github.com/handi7/personal-portfolio",
   },
 
   {

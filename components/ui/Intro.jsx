@@ -53,7 +53,6 @@ export default function Intro() {
                   onClick={() => download(path, filename)}
                 >
                   Download CV
-                  {/* <Link href={cv}>Download CV</Link> */}
                 </button>
               </div>
             </div>

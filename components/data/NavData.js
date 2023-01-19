@@ -7,10 +7,6 @@ export const navData = [
     path: "#skills",
     display: "Skills",
   },
-  // {
-  //   path: "#services",
-  //   display: "Services",
-  // },
   {
     path: "#portfolio",
     display: "Portfolio",

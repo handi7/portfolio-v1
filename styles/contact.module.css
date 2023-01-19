@@ -46,6 +46,20 @@
   transition: 0.3s;
 }
 
+.copy {
+  color: #01d293;
+}
+
+.toast {
+  background-color: transparent;
+}
+
+.toast div {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #0e1630;
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;
