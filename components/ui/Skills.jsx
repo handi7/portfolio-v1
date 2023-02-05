@@ -14,7 +14,7 @@ export default function Skills() {
           </Col>
 
           {skillsData?.map((item, idx) => (
-            <Col lg="4" md="6" sm="6" key={idx}>
+            <Col lg="4" md="4" sm="6" key={idx}>
               <SkillItem skill={item} />
             </Col>
           ))}

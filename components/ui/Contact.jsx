@@ -27,8 +27,8 @@ export default function Contact() {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <SectionSubtitle subtitle="Kontak" />
-            <h3 className="mt-4 mb-4">Hubungi saya</h3>
+            <SectionSubtitle subtitle="Contact" />
+            <h3 className="mt-4 mb-4">Contact me at</h3>
 
             <ul className={`${classes.contact__info__list}`}>
               <li className={`${classes.info__item}`}>

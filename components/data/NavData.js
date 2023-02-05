@@ -1,7 +1,7 @@
 export const navData = [
   {
     path: "/",
-    display: "Intro",
+    display: "About",
   },
   {
     path: "#skills",
@@ -13,6 +13,6 @@ export const navData = [
   },
   {
     path: "#contact",
-    display: "Kontak",
+    display: "Contact",
   },
 ];
