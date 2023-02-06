@@ -38,19 +38,6 @@ export default function PortfolioItem({ item }) {
         </div>
       </div>
 
-      {/* <div className={`${classes.portfolio__live} bg-transparent`}>
-        <button className="primary__btn w-100 me-2 ms-1">
-          <Link href={github} target="_blank">
-            Github
-          </Link>
-        </button>
-
-        <button className="primary__btn w-100 ms-2 me-1">
-          <Link href={liveUrl} target={portfolio ? "_self" : "_blank"}>
-            {portfolio ? "Demo" : "Video Demo"}
-          </Link>
-        </button>
-      </div> */}
     </div>
   );
 }
