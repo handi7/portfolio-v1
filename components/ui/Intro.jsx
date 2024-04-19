@@ -40,8 +40,18 @@ export default function Intro() {
                 I am a full-stack web developer with expertise in JavaScript,
                 ReactJS, and MySQL. I have a passion for creating dynamic and
                 interactive web applications that solve real-world problems.
-                With my technical skills and experience, I am confident in
-                delivering high-quality and user-friendly projects.
+              </p>
+              <p>
+                With one year of dedicated involvement in a maritime technology
+                web application project using Next.js and JavaScript, I have
+                gained invaluable expertise in addressing the unique
+                requirements and challenges of the maritime sector. Furthermore,
+                my journey in mastering full-stack web development, which
+                encompassed learning JavaScript, React.js, Express.js, and MySQL
+                at Purwadhika Digital Technology School, has equipped me with a
+                comprehensive skill set to architect, develop, and deploy robust
+                web solutions. With my technical skills and experience, I am
+                confident in delivering high-quality and user-friendly projects.
               </p>
               <p>
                 I also have a wealth of experience in other fields. I have a
