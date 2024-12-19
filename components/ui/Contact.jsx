@@ -4,24 +4,9 @@ import classes from "@/styles/contact.module.css";
 import { Col, Container, Row } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import Form from "./Form";
-import { MdContentCopy } from "react-icons/md";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export default function Contact() {
-  const onCopy = () => {
-    navigator.clipboard.writeText("+6285642212252");
-    toast.success("Phone Number Copied.", {
-      position: "top-center",
-      autoClose: 1500,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
-  };
-
   return (
     <section id="contact" className={`${classes.contact}`}>
       <Container>
@@ -42,15 +27,6 @@ export default function Contact() {
                   <i className="ri-mail-line"></i>
                 </span>
                 <p>handi7.co@gmail.com</p>
-              </li>
-              <li className={`${classes.info__item}`}>
-                <span>
-                  <i className="ri-phone-line"></i>
-                </span>
-                <p>+62856 4221 2252</p>
-                <button className="secondary__btn" onClick={onCopy}>
-                  <MdContentCopy />
-                </button>
               </li>
             </ul>
 
