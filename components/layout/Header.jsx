@@ -13,10 +13,7 @@ export default function Header() {
   const tag = router.asPath.slice(1) || "home";
 
   const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       headerRef.current.classList.add(`${classes.header__shrink}`);
     } else {
       headerRef.current.classList.remove(`${classes.header__shrink}`);
@@ -47,11 +44,7 @@ export default function Header() {
           </div>
 
           {/* ========= nav menu =========== */}
-          <div
-            className={`${classes.navigation}`}
-            ref={menuRef}
-            onClick={toggleMenu}
-          >
+          <div className={`${classes.navigation}`} ref={menuRef} onClick={toggleMenu}>
             <div className={`${classes.nav__menu}`}>
               {navData.map((item, index) => {
                 const current = item.path.slice(1) || "home";
@@ -67,12 +60,6 @@ export default function Header() {
                   </Link>
                 );
               })}
-
-              <div className={`${classes.nav__right}`}>
-                <p className=" d-flex align-items-center gap-2 mb-0">
-                  <i className="ri-phone-line"></i> +6285642212252
-                </p>
-              </div>
             </div>
           </div>
 
